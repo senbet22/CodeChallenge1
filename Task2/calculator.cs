@@ -24,7 +24,7 @@ public class Calculator
             Console.WriteLine("Cannot divide by zero");
             return double.NaN;
         }
-        return a / b;
+        return Math.Round(a / b, 2);
     }
 
 }
