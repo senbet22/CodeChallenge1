@@ -5,14 +5,14 @@ Calculator calculator = new Calculator();
 Console.WriteLine("Welcome to Simple Calculator!");
 
 Console.WriteLine("Please enter your first number:");
-if (!calculator.IsValidNumber(Console.ReadLine(), out double a))
+if (!calculator.IsValidNumber(Console.ReadLine()?? "", out double a))
 {
     Console.WriteLine("Invalid number.");
     return;
 }
 
 Console.WriteLine("Please enter your second number:");
-if (!calculator.IsValidNumber(Console.ReadLine(), out double b))
+if (!calculator.IsValidNumber(Console.ReadLine()?? "", out double b))
 {
     Console.WriteLine("Invalid number.");
     return;
@@ -20,7 +20,7 @@ if (!calculator.IsValidNumber(Console.ReadLine(), out double b))
 
 
 Console.WriteLine("Choose your operation: A to add, S to subtract, M to multiply or D to Devide");
-string operation = Console.ReadLine().ToUpper();
+string operation = (Console.ReadLine()?? "").ToUpper();
 
 
 double result;
