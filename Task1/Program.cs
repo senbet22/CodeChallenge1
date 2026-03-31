@@ -1,4 +1,6 @@
-﻿string name = "Senbet";
+﻿// Simple excercise to practice using variables and string interpolation in C#.
+
+string name = "Senbet";
 int age = 27;
 double height = 1.85;
 char grade = 'A';

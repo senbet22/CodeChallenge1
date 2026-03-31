@@ -1,4 +1,4 @@
-﻿
+﻿// Simple Calculator that imports the Calculator class and uses it. 
 
 Calculator calculator = new Calculator();
 
