@@ -17,5 +17,10 @@ public class Calculator
         }
         return Math.Round(a / b, 2);
     }
+
+    public bool IsValidNumber(string input, out double result)
+    {
+        return double.TryParse(input, out result);
+    }
 };
 
